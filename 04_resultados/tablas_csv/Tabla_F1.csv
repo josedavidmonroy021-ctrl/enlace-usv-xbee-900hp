@@ -1,0 +1,7 @@
+﻿Aspecto;Sábalo (diseño documentado, 2015);Este trabajo
+Módem;RFD900 (1 W). Observado en 2026: RF451;XBee-PRO 900HP
+Quién inicia el intercambio;El USV envía al haber un dato nuevo y la estación cuando el operador actúa;La estación pregunta y el USV responde
+Detección de pérdida del enlace;Alarmas por tiempo de espera (ERRSAB, ERREC);Tiempo de espera de 800 ms por ciclo
+Reintentos;"Sin retransmisión en el radio (OPRESEND desactivado); confirmación por TCP/IP";Reintentos MAC con ACK (RR = 10)
+Estructura de la trama;$SB…*CH, longitud variable, checksum XOR;$PUSV, 128 bytes fijos
+Métricas del enlace;No reportadas;RTT, jitter, PER, BER, RSSI y SNR
