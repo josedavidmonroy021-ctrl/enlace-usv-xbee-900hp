@@ -1,0 +1,9 @@
+﻿Elemento relacionado con el XBee;Mecanismo de interferencia;Efecto potencial sobre el enlace;Medida de diseño;Separación mínima de diseño
+ESC;Conducción y radiación por conmutación;Incremento del ruido en la recepción;Separación física y alimentación desacoplada;≥ 16 cm (λ/2) de la antena del XBee
+Motores brushless y conductores de potencia;Corrientes elevadas y transitorios;Acoplamiento electromagnético;"Separación de cables de potencia y RF; evitar recorridos paralelos prolongados";≥ 16 cm (λ/2) de la antena del XBee
+Batería y distribución de potencia;Variaciones de tensión/corriente;Ruido conducido hacia el XBee;"Regulación y desacoplamiento de alimentación (1,0 µF y 47 pF; rizado ≤ 50 mV pico a pico)";No aplica (acoplamiento conducido)
+STM32H562VGT6;Ruido conducido por líneas digitales/alimentación;Alteración de la comunicación UART;Alimentación limpia y separación de señales;No aplica (acoplamiento conducido)
+GNSS L76K;Posibles emisiones espurias/acoplamiento RF;Desensibilización del receptor GNSS o interferencia mutua;Separación entre antenas y módulos;≥ 16 cm (λ/2) entre antenas
+Sistema de video 5,8 GHz;Radiación RF y armónicos;Posible saturación/interferencia del receptor XBee;"Separación entre antenas y módulos RF; alimentaciones independientes";≥ 16 cm (λ/2) entre antenas y módulos RF
+Cámara GreenYi;Ruido conducido por la alimentación;Ruido en la alimentación y en las líneas del XBee;Alimentación y señal de video independientes de las del XBee;No aplica (no es fuente de RF)
+Objetos metálicos del casco o la estructura;Bloqueo y reflexión del patrón de radiación;Reducción del alcance;Antena alejada de objetos metálicos (Digi International, 2021);Sin metal sobre ni bajo la antena

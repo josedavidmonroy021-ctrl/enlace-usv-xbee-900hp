@@ -1,0 +1,11 @@
+﻿Criterio de selección;Peso;GAMMA62T LoRa;Digi XBee-PRO® 900HP (S3B);HC-12;Digi XBee SX RF Modem;RF451 / RF452
+Tasa de Datos RF;15%;2 (0,30);4 (0,60);3 (0,45);4 (0,60);4 (0,60)
+Encriptación / Seguridad;10%;1 (0,10);5 (0,50);1 (0,10);5 (0,50);5 (0,50)
+Modulación Anti-Ruido (FHSS);10%;3 (0,30);5 (0,50);1 (0,10);5 (0,50);5 (0,50)
+Alcance y potencia;10%;4 (0,40);4 (0,40);2 (0,20);5 (0,50);5 (0,50)
+Consumo de potencia;10%;5 (0,50);4 (0,40);5 (0,50);3 (0,30);3 (0,30)
+Voltaje de alimentación;10%;5 (0,50);5 (0,50);5 (0,50);4 (0,40);4 (0,40)
+Topologías soportadas;10%;5 (0,50);5 (0,50);2 (0,20);5 (0,50);5 (0,50)
+Dimensiones;10%;4 (0,40);5 (0,50);5 (0,50);2 (0,20);2 (0,20)
+Costo;15%;4 (0,60);4 (0,60);5 (0,75);2 (0,30);1 (0,15)
+Puntuación total;100%;3,60;4,50;3,30;3,80;3,65

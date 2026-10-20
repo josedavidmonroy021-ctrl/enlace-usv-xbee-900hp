@@ -1,0 +1,4 @@
+﻿Trama downlink;Bytes / Bits
+$PUSVD,hhmmss.ss,llll.llll,a,yyyyy.yyyy,a,x,xx,x.x,x.x,M,xx.x,N,xxx.x,T,xxx.x,T,±xx.x,P,±xx.x,R,xx.x,C,x,xxx.x,A,±xxx,STATE,x*hh<CR><LF>;130 / 1040
+Trama uplink;Bytes / Bits
+$PUSVU,xxxx,xxxx,±xxx,xx*hh<CR><LF>;29 / 232

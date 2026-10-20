@@ -1,0 +1,11 @@
+﻿Criterio de selección;Peso;LINX ANT-916-CW-HW;LINX ANT-916-WRT;PCTEL MFB-9157;ANT915MH-RPSMAM-2E
+Compatibilidad frecuencia de operación;15%;5 (0,75);5 (0,75);5 (0,75);5 (0,75)
+Patrón de radiación;15%;5 (0,75);5 (0,75);5 (0,75);5 (0,75)
+Dimensiones e integración en el USV;20%;5 (1,00);5 (1,00);2 (0,40);3 (0,60)
+Peso;10%;5 (0,50);5 (0,50);2 (0,20);4 (0,40)
+Ganancia;10%;3 (0,30);4 (0,40);5 (0,50);5 (0,50)
+VSWR / adaptación de impedancia;10%;4 (0,40);4 (0,40);5 (0,50);5 (0,50)
+Resistencia ambiental;5%;3 (0,15);4 (0,20);5 (0,25);3 (0,15)
+Potencia máxima de entrada;5%;4 (0,20);4 (0,20);5 (0,25);3 (0,15)
+Costo;10%;5 (0,50);4 (0,40);1 (0,10);5 (0,50)
+Puntuación total;100%;4,55;4,60;3,70;4,30

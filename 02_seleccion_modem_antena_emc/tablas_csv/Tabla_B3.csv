@@ -1,0 +1,18 @@
+﻿CARACTERÍSTICA / ESPECIFICACIÓN;LINX ANT-916-CW-HW1;LINX ANT-916-WRT2;PCTEL MFB-91573;ANT915MH-RPSMAM-2E (5,0 dBi)
+Fabricante;Linx Technologies / TE Connectivity;Linx Technologies / TE Connectivity;PCTEL (Antenna Products Group);No especificado
+Tipo / Formato de Antena;Dipolo de alambre/helicoide ( onda) flexible;Dipolo de perfil bajo para montaje en panel/cubierta;Omnidireccional vertical de fibra de vidrio (estación base/exterior);Antena tipo látigo (whip)
+Frecuencia Central / Rango;Rango recomendado:  (Frecuencia central: );Rango:  (Frecuencia nominal: );Rango:  (Banda ISM);915 MHz
+Ganancia Pico;;;;5,0 dBi
+VSWR (Máximo / Típico);típico en frecuencia central;máximo en la banda;máximo;< 1,5
+Patrón de Radiación;Omnidireccional ();Omnidireccional ();Omnidireccional ();Omnidireccional (observado en las pruebas de campo)
+Impedancia Nominal;;;;50 Ω
+Potencia Máxima de Entrada;10 W;;;No especificada
+Opciones de Conexión;Conector directo SMA o RP-SMA;Latiguillo coaxial con RP-SMA, SMA o MHF1/U.FL;Conector N Macho;RP-SMA macho
+Dimensiones Físicas;"Altura:  ()
+
+Diámetro base:  ()";"Altura exterior:  ()
+
+Diámetro cúpula:  ()";Altura total:  ();Longitud: 195 mm
+Peso Aproximado;12 g a 13,5 g;a  (según cable/conector);;16 g
+Resistencia Ambiental;Temperatura:;Temperatura:;Temperatura:;No especificada
+Precio;$ 9,41 USD;$ 24,68 USD;$ 157 USD;≈ $ 12,43 USD (40 000 COP)

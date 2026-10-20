@@ -1,0 +1,20 @@
+﻿Fase;Actividad
+Definición de requerimientos funcionales;"Vigilancia tecnológica y estado del arte de los protocolos de comunicación en USVs.
+Definición de las variables de entrada y salida del sistema.
+Análisis de restricciones y determinación de las bandas de frecuencia libres de interferencia."
+Diseño conceptual;"Diseño de la arquitectura del enlace.
+Estructuración de la trama de datos y del esquema de comunicación maestro-esclavo.
+Cálculo analítico de la propagación y del balance de enlace."
+Selección de tecnologías;"Selección del módem mediante tabla comparativa.
+Selección de la antena mediante tabla comparativa.
+Estudio de compatibilidad electromagnética (EMC)."
+Implementación;"Configuración del módem seleccionado (modo transparente y cifrado AES-128).
+Programación del protocolo de comunicación en el microcontrolador y en la estación base.
+Montaje del banco de pruebas mediante simulación funcional."
+Pruebas de funcionamiento;"Pruebas de alcance, calidad de servicio y telecontrol simulado (RTT, jitter, PER, BER, RSSI y SNR) en entornos terrestre y marítimo.
+Prueba de recuperación del enlace ante falla del sistema.
+Prueba de polarización de la antena.
+Prueba de disponibilidad continua (24 h).
+Caracterización espectral del módem.
+Evaluación de armónicos y pureza espectral del módem.
+Prueba de interferencia."

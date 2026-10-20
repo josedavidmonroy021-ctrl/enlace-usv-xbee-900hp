@@ -1,0 +1,16 @@
+﻿Segmento de trama downlink;Significado y rango
+hhmmss.ss,llll.llll,a,yyyyy.yyyy,a;UTC: [000000.00–235959.99] Lat: ±90.000000 Lon: ±180.000000
+x,xx,x.x,x.x,M;Calidad: [0–8] Satélites: [00–24] HDOP: [0.5–50.0] Altitud: [-10.0–9999.0]
+xx.x,N,xxx.x,T,;Vel (SOG): [00.0–30.0] kts Rum (COG): [000.0–359.9]°
+xxx.x,T,±xx.x,P,±xx.x,R;Yaw (Azimut): [000.0–359.9]° Pitch: [-90.0–+90.0]° Roll: [-90.0–+90.0]°
+xx.x,C;Temp: [-10.0–85.0] °C
+x;Inundación: [0–1] (0 = Seco | 1 = Agua)
+xxx.x,A;Corriente: [000.0–200.0] A
+±xxx;Ronza: [-180–+180]°
+STATE;Comando: [STATE] (Solicitud estado actual del USV)
+x;Modo Solicitado: [0–2] (0 = Reposo | 1 = Remoto | 2 = Reconectar)
+Segmento de trama uplink;Significado y rango
+xxxx,xxxx;PWM M1: [1000–2000] µs PWM M2: [1000–2000] µs
+±xxx;Ronza: [-180–+180]°
+xx;"Estado Actual: [00–05]
+(00 = Reposo | 01 = Remoto | 02 = Asistido | 03 Reconectado)"

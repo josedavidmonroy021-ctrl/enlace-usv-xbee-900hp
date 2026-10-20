@@ -1,0 +1,5 @@
+﻿Escenario operativo;Tipo de antena (Gt/Gr);Margen teórico máximo (M);Distancia máxima experimental;Causa raíz de la limitación práctica observada
+Terrestre (LoS);1,2 dBi;37,81 dB;700 m;Obstrucción estructural: presencia de edificaciones urbanas que bloquearon el primer elipsoide de Fresnel.
+Terrestre (LoS);5,0 dBi;45,41 dB;700 m;Obstrucción estructural: limitación topográfica idéntica (bloqueo por infraestructura civil).
+Marítimo (USV);1,2 dBi;35,15 dB;600 m;Interferencia por multitrayectoria: cancelaciones fasoriales profundas por oleaje y curvatura marina.
+Marítimo (USV);5,0 dBi;44,33 dB;500 m;Interferencia por multitrayectoria: inestabilidad de fase marina (el desvanecimiento dinámico colapsó el enlace pese al margen extra).
