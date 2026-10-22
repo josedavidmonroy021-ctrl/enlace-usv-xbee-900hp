@@ -1,14 +1,20 @@
-﻿VARIABLES DE ENTRADA
-Variable;Tipo;Formato binario;Rango de bits o bytes con los que trabaja
-GPS-GNSS;Serial UART (TTL).;"Caracteres ASCII de 8 bits; doble precisión (64 bits).";30–82 bytes por sentencia NMEA (240–656 bits). (Kaplan & Hegarty, 2017)
-SOG (Speed Over Ground);Mismo flujo UART del módulo GPS.;ASCII convertido a float de 32 bits.;4 bytes (32 bits). (Kaplan & Hegarty, 2017)
-COG (Course Over Ground);Mismo flujo UART del módulo GPS.;ASCII convertido a float de 32 bits.;4 bytes (32 bits). (Kaplan & Hegarty, 2017)
-(IMU) Acelerómetro, Giroscopio y Brújula “Magnetómetro”;Bus serial síncrono I2C o SPI.;"Entero de 16 bits con signo (complemento a 2); float de 32 bits al procesarse.";"18 bytes por lectura completa (6 por sensor: acelerómetro, giroscopio y magnetómetro). (Biggs et al., 2021; Novac et al., 2021)"
-Temperatura;Digital 1-Wire.;"Entero con signo de 12 a 16 bits; float de 32 bits al parsearse.";2 bytes por lectura (4 bytes como float). (Nassra & Capella, 2023)
-Inundación;Digital discreta (booleana).;Booleano de 1 bit.;1 bit (1 byte al empaquetarse). (Dehlaghi-Ghadim et al., 2023)
-Corriente en baterías;Analógica continua (efecto Hall).;Entero sin signo de 10 a 12 bits (tras ADC).;2 bytes. (Novac et al., 2021)
-VARIABLES DE SALIDA
-Variable;Tipo;Formato binario;Rango de bits o bytes con los que trabaja
-Control de Cámara (solo ronza);Digital / PWM.;Entero de 16 bits con signo (complemento a 2).;2 bytes por comando de posición. (Clements et al., 2021, p. 5)
-Estado de plataforma;Digital discreta (máquina de estados).;Entero de 8 bits sin signo (uint8_t).;1 byte. (Papantonakis et al., 2024)
-Órdenes de propulsión;Digital / PWM.;Entero de 16 bits sin signo (ciclo de trabajo).;2 bytes.
+﻿Fase;Actividad
+Definición de requerimientos funcionales;"Vigilancia tecnológica y estado del arte de los protocolos de comunicación en USVs.
+Definición de las variables de entrada y salida del sistema.
+Análisis de restricciones y determinación de las bandas de frecuencia libres de interferencia."
+Diseño conceptual;"Diseño de la arquitectura del enlace.
+Estructuración de la trama de datos y del esquema de comunicación maestro-esclavo.
+Cálculo analítico de la propagación y del balance de enlace."
+Selección de tecnologías;"Selección del módem mediante tabla comparativa.
+Selección de la antena mediante tabla comparativa.
+Estudio de compatibilidad electromagnética (EMC)."
+Implementación;"Configuración del módem seleccionado (modo transparente y cifrado AES-128).
+Programación del protocolo de comunicación en el microcontrolador y en la estación base.
+Montaje del banco de pruebas mediante simulación funcional."
+Pruebas de funcionamiento;"Pruebas de alcance, calidad de servicio y telecontrol simulado (RTT, jitter, PER, BER, RSSI y SNR) en entornos terrestre y marítimo.
+Prueba de recuperación del enlace ante falla del sistema.
+Prueba de polarización de la antena.
+Prueba de disponibilidad continua (24 h).
+Caracterización espectral del módem.
+Evaluación de armónicos y pureza espectral del módem.
+Prueba de interferencia."

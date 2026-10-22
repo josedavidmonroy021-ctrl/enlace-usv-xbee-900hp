@@ -1,8 +1,8 @@
-﻿Parámetro;Valor
-Frecuencia central de operación (f);915 MHz
-Potencia de transmisión (Ptx);24 dBm (250 mW)
-Ganancia de cada antena (Gt = Gr), por configuración;1,2 dBi (configuración 1) / 5,0 dBi (configuración 2)
-Sensibilidad del receptor (Srx a 200 kbps);−101 dBm
-Impedancia característica;50 Ω
-Relación de onda estacionaria (VSWR máximo);≤ 2:1
-Técnica de acceso y modulación;Espectro ensanchado por salto de frecuencia (FHSS)
+﻿Profundidad de vegetación (dv);Exceso de atenuación teórico (Aev)
+1 m;0,17 dB
+5 m;0,84 dB
+10 m;1,65 dB
+20 m;3,19 dB
+30 m;4,64 dB
+50 m;7,27 dB
+100 m;12,55 dB

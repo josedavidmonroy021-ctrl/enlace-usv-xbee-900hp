@@ -1,11 +1,14 @@
-﻿Componente de trama;Símbolo ASCII;Caracteres (Bytes);Tamaño (Bits);Código HEX;Observación
-Inicio;$;1;8;24;Obligatorio (trama paramétrica convencional $).
-Identificador propietario;P;1;8;50;Obligatoria para tramas personalizadas.
-Código del sistema;ccc;3;24;Varia;Mnemónico de 3 letras para identificar el sistema personalizado.
-Formateador;c o cc;1 a 2;8 a 16;Varia;Subcódigo mnemónico para identificar el originador de los datos.
-Delimitador de campo;,;1;8;2C;Separa de forma secuencial cada uno de los campos de datos dentro de la oración. Permite ubicar variables específicas.
-Datos;Caracteres válidos;Largo de la variable;Varia;Varia;Texto plano formato ASCII, contiene la información útil.
-Delimitador de verificación;*;1;8;2A;Indica el fin del bloque de datos e inicia la verificación de errores.
-Checksum;2 caracteres;2;16;Varia;Representación hexadecimal del cálculo lógico OR exclusivo (XOR) de los 8 bits de todos los caracteres ubicados entre el símbolo de inicio y el asterisco.
-Fin de Sentencia;"<CR><LF>
-2 caracteres";2;16;0D y 0A;Comandos de control de formato (Carriage Return y Line Feed), representan el fin de comunicación del enlace.
+﻿VARIABLES DE ENTRADA
+Variable;Tipo;Formato binario;Rango de bits o bytes con los que trabaja
+GPS-GNSS;Serial UART (TTL).;"Caracteres ASCII de 8 bits; doble precisión (64 bits).";30–82 bytes por sentencia NMEA (240–656 bits). (Kaplan & Hegarty, 2017)
+SOG (Speed Over Ground);Mismo flujo UART del módulo GPS.;ASCII convertido a float de 32 bits.;4 bytes (32 bits). (Kaplan & Hegarty, 2017)
+COG (Course Over Ground);Mismo flujo UART del módulo GPS.;ASCII convertido a float de 32 bits.;4 bytes (32 bits). (Kaplan & Hegarty, 2017)
+(IMU) Acelerómetro, Giroscopio y Brújula “Magnetómetro”;Bus serial síncrono I2C o SPI.;"Entero de 16 bits con signo (complemento a 2); float de 32 bits al procesarse.";"18 bytes por lectura completa (6 por sensor: acelerómetro, giroscopio y magnetómetro). (Biggs et al., 2021; Novac et al., 2021)"
+Temperatura;Digital 1-Wire.;"Entero con signo de 12 a 16 bits; float de 32 bits al parsearse.";2 bytes por lectura (4 bytes como float). (Nassra & Capella, 2023)
+Inundación;Digital discreta (booleana).;Booleano de 1 bit.;1 bit (1 byte al empaquetarse). (Dehlaghi-Ghadim et al., 2023)
+Corriente en baterías;Analógica continua (efecto Hall).;Entero sin signo de 10 a 12 bits (tras ADC).;2 bytes. (Novac et al., 2021)
+VARIABLES DE SALIDA
+Variable;Tipo;Formato binario;Rango de bits o bytes con los que trabaja
+Control de Cámara (solo ronza);Digital / PWM.;Entero de 16 bits con signo (complemento a 2).;2 bytes por comando de posición. (Clements et al., 2021, p. 5)
+Estado de plataforma;Digital discreta (máquina de estados).;Entero de 8 bits sin signo (uint8_t).;1 byte. (Papantonakis et al., 2024)
+Órdenes de propulsión;Digital / PWM.;Entero de 16 bits sin signo (ciclo de trabajo).;2 bytes.
